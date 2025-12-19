@@ -1,0 +1,235 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #504e4e 0%, #676768 100%);
+  min-height: 100vh;
+}
+
+.language-selector {
+  cursor: pointer;
+}
+
+.flag-icon {
+  width: 20px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("imagess/cph.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  padding: 100px 0 80px;
+  text-align: center;
+}
+
+.celebrity-name {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+.verified-badge {
+  color: #1da1f2;
+  font-size: 2.5rem;
+  margin-left: 10px;
+  filter: drop-shadow(0 0 10px rgba(29, 161, 242, 0.8));
+}
+
+.official-notice {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  border-left: 5px solid #fff;
+  padding: 25px;
+  margin: 30px 0;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+.content-section {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  margin: 30px 0;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+  font-weight: 700;
+  color: #764ba2;
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 2px;
+}
+
+.movie-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+  height: 100%;
+}
+
+.movie-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.movie-card img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.connect-btn {
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s;
+  border: none;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+
+.whatsapp-btn {
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  color: white;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.5);
+  color: white;
+}
+
+.telegram-btn {
+  background: linear-gradient(135deg, #0088cc, #005580);
+  color: white;
+}
+
+.telegram-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(0, 136, 204, 0.5);
+  color: white;
+}
+
+/* Added Zangi button styles */
+.zangi-btn {
+  background: linear-gradient(135deg, #1e07f0, #0e84c9);
+  color: white;
+}
+
+.zangi-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(130, 53, 255, 0.5);
+  color: white;
+}
+
+.connect-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.stats-card {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.stats-number {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.badge-custom {
+  background: linear-gradient(135deg, #f093fb, #f5576c);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+  display: inline-block;
+  margin: 5px;
+}
+
+.project-card {
+  background: linear-gradient(135deg, #f6f9fc 0%, #ffffff 100%);
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-left: 5px solid #764ba2;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateX(10px);
+}
+
+@media (max-width: 768px) {
+  .celebrity-name {
+    font-size: 2.5rem;
+  }
+  .verified-badge {
+    font-size: 1.5rem;
+  }
+  .content-section {
+    padding: 25px;
+  }
+}
+
+.footer {
+  background: #1a1a2e;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.warning-box {
+  background: #fff3cd;
+  border: 2px solid #ffc107;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.warning-box i {
+  color: #ffc107;
+  font-size: 2rem;
+}
